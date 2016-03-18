@@ -1,7 +1,7 @@
 var net = require('net');
 var server = net.createServer(function(socket){
 	socket.on ('data', function(data) {
-		console.log('Server: data from client' + data);
+		console.log('Server: data from client ' + data);
 		socket.write('Server Socket: Hello World');
 	});
 
